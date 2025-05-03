@@ -22,6 +22,8 @@ async def execute_code(language: str, code: str) -> Dict[str, Any]:
     - exitCode: The exit code of the execution
     - timeout: Whether the execution timed out
     """
+    print("Executing code...")
+    print(code)
     executor = CodeExecutor()
     return executor.execute(language, code)
 
